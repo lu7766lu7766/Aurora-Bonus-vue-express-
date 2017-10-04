@@ -15,13 +15,14 @@ const users = [
 export default () => {
 
   // Home page.
-  router.get('/', (req, res, next) => {
-    var output = {
-      message: 'Hello World!'
-    }
-    res.body = output
-    next()
-  })
+  // router.get('', (req, res, next) => {
+  //   var output = {
+  //     message: 'Hello World!'
+  //   }
+  //   res.body = output
+  //   // res.sendFile(__dirname + '/index.html');
+  //   next()
+  // })
 
   // Get all users.
   router.get('/users', (req, res, next) => {

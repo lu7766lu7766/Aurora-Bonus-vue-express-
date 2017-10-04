@@ -6,6 +6,7 @@ import favicon from 'serve-favicon'
 import bodyParser from 'body-parser'
 import config from './config'
 import routes from './routes'
+// import path from 'path'
 
 export default (app) => {
 
@@ -33,6 +34,7 @@ export default (app) => {
         code: 0,
         data: res.body
       }
+      // console.log(req.connection.remoteAddress)
       // res.json(res.body)
       res.send(JSON.stringify(res.body))
     } else {

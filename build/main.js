@@ -102,17 +102,26 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_express___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_express__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__middlewares__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_cors__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_cors___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_cors__);
 
 
 
 
 
+
+
+var corsOptions = {
+  origin: 'http://localhost:8080',
+  methods: ['GET', 'POST']
+};
 
 var app = __WEBPACK_IMPORTED_MODULE_0_express___default()();
 var host = process.env.HOST || '127.0.0.1';
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 8099;
 
 app.set('port', port);
+app.use(__WEBPACK_IMPORTED_MODULE_3_cors___default()(corsOptions));
 
 Object(__WEBPACK_IMPORTED_MODULE_2__middlewares__["a" /* default */])(app);
 
@@ -134,6 +143,7 @@ console.log('Server listening on ' + host + ':' + port);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_body_parser___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_body_parser__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__config__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__routes__ = __webpack_require__(7);
+
 
 
 
@@ -210,14 +220,6 @@ var router = Object(__WEBPACK_IMPORTED_MODULE_0_express__["Router"])();
 var users = [{ name: 'Alexandre' }, { name: 'Pooya' }, { name: 'Sébastien' }];
 
 /* harmony default export */ __webpack_exports__["a"] = (function () {
-  router.get('/', function (req, res, next) {
-    var output = {
-      message: 'Hello World!'
-    };
-    res.body = output;
-    next();
-  });
-
   router.get('/users', function (req, res, next) {
     res.body = users;
 
@@ -253,6 +255,13 @@ var users = [{ name: 'Alexandre' }, { name: 'Pooya' }, { name: 'Sébastien' }];
 /***/ (function(module, exports) {
 
 module.exports = require("knex");
+
+/***/ }),
+/* 9 */,
+/* 10 */
+/***/ (function(module, exports) {
+
+module.exports = require("cors");
 
 /***/ })
 /******/ ]);

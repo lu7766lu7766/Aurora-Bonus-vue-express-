@@ -59,11 +59,12 @@ function handleError (res, showErrMsg) {
 }
 
 function createApiBody (method = "get", url = "", data = {}) {
+  console.log('url', 'http://127.0.0.1:8099/' + url)
   let res = _.merge({}, {
-    url,
+    url: 'http://127.0.0.1:8099/' + url,
     method,
     responseType: 'json',
-    withCredentials: true
+    // withCredentials: true
   })
   res[method == 'get'? 'params': 'data'] = data
   return res
