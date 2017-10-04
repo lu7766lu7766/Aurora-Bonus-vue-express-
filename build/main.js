@@ -113,7 +113,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 var corsOptions = {
   origin: 'http://localhost:8080',
-  methods: ['GET', 'POST']
+  methods: ['GET', 'POST'],
+  credentials: true
 };
 
 var app = __WEBPACK_IMPORTED_MODULE_0_express___default()();

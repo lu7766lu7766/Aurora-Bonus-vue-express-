@@ -7,7 +7,8 @@ import cors from 'cors'
 
 var corsOptions = {
   origin: 'http://localhost:8080', // not 127.0.0.1
-  methods:['GET', 'POST']
+  methods:['GET', 'POST'],
+  credentials: true
 };
 
 const app = express()

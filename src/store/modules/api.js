@@ -64,7 +64,7 @@ function createApiBody (method = "get", url = "", data = {}) {
     url: 'http://127.0.0.1:8099/' + url,
     method,
     responseType: 'json',
-    // withCredentials: true
+    withCredentials: true
   })
   res[method == 'get'? 'params': 'data'] = data
   return res
