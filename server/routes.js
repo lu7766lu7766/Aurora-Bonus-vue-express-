@@ -49,13 +49,9 @@ export default () => {
 
   // Get all users.
   router.get('/users', async (req, res, next) => {
-    var user = await User.fetchAll()
-    // .then(function(user) {
-    //   console.log(user.toJSON());
-    // }).catch(function(err) {
-    //   console.error(err);
-    // });
-    // console.log(knex.select('*').from('users').toSQL())
+    var user = await User.where('id', '1').fetchAll({
+      columns: ['guid', 'name', 'introducer']
+    })
     res.body = user.toJSON()
     // res.status = 0
     next()
