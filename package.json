@@ -6,9 +6,8 @@
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
-    "build": "node build/build.js && backpack build",
-    "server": "backpack dev",
-    "start": "node app.js"
+    "build": "node build/build.js && backpack build && node build/finish_build.js",
+    "server": "backpack dev"
   },
   "dependencies": {
     "axios": "^0.16.2",
