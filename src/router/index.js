@@ -1,24 +1,20 @@
 import Vue from 'vue'
-import Router from 'vue-router'
-import List from 'components/List'
-import Detail from 'components/Detail'
+import VueRouter from 'vue-router'
 
-Vue.use(Router)
+const routes = [
+  { path: '/', component: () => import('src/App'), name: 'App',
+    children: [
+      { path: '/login', name: 'login', component: () => import('@/Login') },
+      { path: '*', redirect : '/login' }
+    ]
+  }
+]
 
-export default new Router({
-  routes: [
-    {
-      path: '/',
-      name: 'List',
-      component: List
-    },{
-      path : '/movie/:title',
-      name : 'detail',
-      component : Detail
-    },
-    {
-      path: '*',
-      redirect : '/'
-    }
-  ]
+Vue.use(VueRouter)
+
+const router = new VueRouter({
+  mode: 'history',
+  routes // same with routes: routes
 })
+
+export default router

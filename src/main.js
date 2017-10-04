@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import App from './App'
+import store from './store/index'
 import toastr from 'toastr'
 import MuseUI from 'muse-ui'
 import Vodal from 'vodal'
@@ -9,6 +10,8 @@ import 'toastr/build/toastr.min.css'
 import 'muse-ui/dist/muse-ui.css'
 import './assets/icon.css'
 import 'vodal/fade.css'
+
+require('assets/lib')
 
 Vue.use(MuseUI)
 Vue.prototype.$http = axios
@@ -32,22 +35,14 @@ toastr.options = {
   "showMethod": "fadeIn",
   "hideMethod": "fadeOut"
 }
-// Vue.filter('imgUrlPrefix',(value) => {
-//   const url = value.substr(7)
-//   const prefix = "https://images.weserv.nl/?url="
-//   return prefix + url
-// })
-Vue.filter('castsToString',(casts) => {
-  return casts.map(item => {
-    return item.name
-  })
-})
 
 /* eslint-disable no-new */
 new Vue({
   created(){
-    toastr.success('启动成功!')
+    // toastr.success('启动成功!')
   },
+  store,
   router,
-  render: h => h(App)
+  template: '<router-view transition="slide"></router-view>'
+  // render: h => h(App)
 }).$mount('#app')
