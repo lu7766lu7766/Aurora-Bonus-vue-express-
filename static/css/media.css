@@ -1,0 +1,211 @@
+@media (max-width: 1200px){
+	.accountInfoUnit{
+	    width: calc(100% / 8);
+	}
+}
+@media (max-width: 1180px){
+	.header_form .form-group, .addBtnBox{
+		margin-bottom: 10px;
+	}
+}
+@media (max-width: 1024px){
+	/*game/add*/
+	.searchTeam, .resultTeam{
+		padding: 0;
+	}
+	.accountInfoUnit{
+	    width: calc(100% / 6);
+	}
+}
+@media (max-width: 920px){
+	.header_form.pull-right{
+		float: inherit !important;
+	}
+	.addBtn{
+	    /*margin-bottom: 10px;*/
+	}
+	.tableBox .table > thead > tr > th, .tableBox .table > tbody > tr > td{		
+		padding:5px 8px;
+	}
+	.{
+	    width: 100%;
+	}
+	.form-control{
+		width: 100%;
+	}
+	.form-group div[class*="col-sm-"]:not(.control-label) + div[class*="col-sm-"]{
+		margin-top: 10px;
+		padding: 0 10px;
+	}
+}
+@media (max-width: 850px){
+	.accountInfoUnit{
+	    width: calc(100% /5);
+	}
+}
+@media(min-width: 769px){
+	.navbar-nav{
+		margin-left: 0;
+	}
+	.header_msg li{
+	    display: inline-block;
+	    margin:0;
+	    padding: 12px 3px 12px 9px; 
+	}
+	.navbar-text{
+		padding-left: 0;
+	}
+	.numModal .modal-dialog{
+		width: auto;
+	}
+	.viewModal .modal-dialog, .levelModal .modal-dialog{
+		width:65%;
+	}
+	.modal{
+	    padding-right: 17px;
+	}
+	.form-inline .form-group + .form-group {
+	    margin-left: 0;
+	}
+	.nav-tabs.nav-tabs-solid.layer_tabs{
+	    background: transparent;
+	}
+	.layer_tabs.nav.nav-xs > li > a{
+	    padding: 5px 15px 5px 0;
+	}
+	.layer_tabs.nav-tabs.nav-tabs-solid > li > a:hover, 
+	.layer_tabs.nav-tabs.nav-tabs-solid > li > a:focus{
+		background: transparent;
+	}
+}
+@media (max-width: 768px){
+	.mtitleWidth{
+	    min-width: 300px !important;
+	    word-break: break-all;
+	    white-space:inherit !important;
+	}
+	.header_msg{
+		padding-left: 0;
+	}
+	.header_msg li {
+	    padding: 12px 0;
+	}
+	.header_msg li.open{
+		padding-bottom: 0;
+		background-color: rgba(0, 0, 0, 0.15);
+	}
+	.header_msg span > a {
+	    display: inline-block;
+	    width: calc(100% - 80px);
+	}
+	.header_msg i{
+	    margin: 0 0 0 20px;
+	}
+	.navbar-nav .header_msg .open .dropdown-content{
+		margin-top: 10px;
+	}
+	.nav > li > a{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.header_msg .dropdown-content-body{
+		padding: 0;
+	}
+	.header_msg .dropdown-content-body .media{
+		margin-top: 0;
+	}
+	.header_msg .dropdown-content-body .media-body{
+		padding: 0 20px;
+	}
+	.modal{
+	    padding-right: 0 !important;
+	}
+	.viewModal .table-responsive{
+		border:none;
+	}
+	.header_form{
+	    display:block;
+	}
+	.header_form select.form-control{
+	    width: 100%;
+	}
+	.langPanel .ui-tabs .ui-tabs-nav:before{
+		content: "";
+		margin: 0;
+	}
+	.tabBox{
+		padding: 0;
+	}
+	.langPanel .uploader{
+	    width: 100%;
+	}
+	.table-responsive > .table-bordered > tbody > tr:last-child > th, 
+	.table-responsive > .table-bordered > tfoot > tr:last-child > th, 
+	.table-responsive > .table-bordered > tbody > tr:last-child > td, 
+	.table-responsive > .table-bordered > tfoot > tr:last-child > td,
+	.table-responsive > .table-bordered > thead > tr > th:first-child, 
+	.table-responsive > .table-bordered > tbody > tr > th:first-child, 
+	.table-responsive > .table-bordered > tfoot > tr > th:first-child, 
+	.table-responsive > .table-bordered > thead > tr > td:first-child, 
+	.table-responsive > .table-bordered > tbody > tr > td:first-child, 
+	.table-responsive > .table-bordered > tfoot > tr > td:first-child,
+	.table-responsive > .table-bordered > thead > tr > th:last-child, 
+	.table-responsive > .table-bordered > tbody > tr > th:last-child, 
+	.table-responsive > .table-bordered > tfoot > tr > th:last-child, 
+	.table-responsive > .table-bordered > thead > tr > td:last-child, 
+	.table-responsive > .table-bordered > tbody > tr > td:last-child, 
+	.table-responsive > .table-bordered > tfoot > tr > td:last-child{
+		border:1px #ddd solid;
+	}
+	/*layer_add*/
+	.nav-tabs{
+		padding: 0;
+	}
+	.nav-tabs:before {
+	    content: ''; 
+	    color: inherit;
+	    font-size: 12px;
+	    margin-top: 0;
+	    margin-left: 0;
+	    margin-bottom: 0;
+	    text-transform: uppercase;
+	    opacity: 0.5;
+	    filter: alpha(opacity=50);
+	}
+	.nav-tabs > li.active > a:after, .nav-tabs > li.active > a:hover:after, .nav-tabs > li.active > a:focus:after {
+	    background-color: #263238;
+	}
+	/*layer_edit*/
+	.layer_tabs.nav-tabs.nav-tabs-solid > li.active > a:after, 
+	.layer_tabs.nav-tabs[class*=bg-] > li.active > a:after{
+	    content:"";
+	    top: 11px;
+	    left: 14px;
+	}
+	/*verify*/
+	.verifyForm .verify_title,
+	.verifyForm .verify_info{
+	    width: 100%;
+	}
+	/*theme*/
+	.uploader{
+		width: 100%;
+	}
+	/*setting/danger-level*/
+	.danger_levelTableBox{
+		overflow-y: inherit;
+	}
+	/*game/add*/
+	.searchTeam tfoot .teamInfo{
+	    text-align: center;
+	    margin-bottom: 5px;
+	}
+	.searchTeam tfoot .teamPage{
+	    text-align: center;
+	}
+}
+@media (max-width: 500px){
+	.accountInfoUnit{
+	    width: calc(100% /2);
+	}
+}

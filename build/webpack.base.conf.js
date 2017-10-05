@@ -29,7 +29,8 @@ module.exports = {
       'vue': 'vue/dist/vue.js',
       'src': resolve('src'),
       'assets': resolve('src/assets'),
-      '@': resolve('src/components')
+      '@': resolve('src/components'),
+      'static': resolve('static/')
     }
   },
   module: {

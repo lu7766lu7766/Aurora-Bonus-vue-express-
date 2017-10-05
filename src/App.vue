@@ -5,7 +5,10 @@
 </template>
 
 <script>
+require('bootstrap')
+require('bootstrap/dist/css/bootstrap.min.css')
 import { mapActions } from 'vuex'
+
 export default {
   name: 'app',
   data(){
@@ -14,19 +17,32 @@ export default {
   },
   methods: {
     ...mapActions([
-      'getUser',
-      'getUsers'
+      'addUser',
+      'getUsers',
+      'setScore'
     ])
   },
   async mounted () {
     // var res = await axios.get('/api/users')
     // var res = await this.getUser({ id: 1 })
-    var res = await this.getUsers({ id: 1 })
-    console.log(res)
+    // var res = await this.getUsers({ id: 1 })
+    this.addUser({
+      user: {
+        id:2, name:'haha', password: 'gg'
+      }
+    })
+    // console.log(res)
   }
 }
 </script>
 
 <style>
+@import url('/static/css/colors.css');
+@import url('/static/css/core.min.css');
+@import url('/static/css/components.min.css');
+@import url('/static/css/media.css');
 
+html body {
+  background: #ccc;
+}
 </style>

@@ -1,0 +1,1046 @@
+body{
+    font-family: \5FAE\8EDF\6B63\9ED1\9AD4, Microsoft, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+.bg_yellow{
+    background: #ffc042;
+}
+.loginOut i{
+    font-size: 18px;
+}
+.greyBg{
+    background: #eee;
+}
+.border{
+    border-top: 1px solid #ccc;
+    margin: 3px 0;
+}
+.mt20{
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+.mt10{
+    margin-top: 10px;
+}
+.mb10{
+    margin-bottom: 10px;
+}
+.tagBtn{
+    padding: 0 8px;
+    font-size: 12px;
+}
+.config_info{
+    margin: 7px 0;
+}
+.alert.alert-styled-left {
+    border-left-width: 35px;
+}
+.alert[class*=alert-styled-]:after{
+    content: '\e9b9';
+    width: 35px;
+    left: -35px;
+    color:#777;
+}
+.alert {
+    padding: 7px 15px;
+    border-radius: 2px;
+}
+.alpha-teal {
+    background-color: #f9f9f9;
+    border-color:#d8d8d8;
+}
+.layer_list{
+    margin: 0 0 15px;
+    padding: 0;
+    list-style: none;
+}
+.layer_list li{
+    display: inline-block;
+    vertical-align: top;
+    color:#777;
+}
+.layer_list li+li::before{
+    content: "/";
+    margin-right: 2px;
+    color: #999;
+}
+.navbar-header{
+    min-width: 235px;
+}
+.nav > li > a{
+    padding-left: 9px;
+    padding-right: 9px;
+}
+.mtitleWidth{
+    min-width: 300px !important;
+    word-break: break-all;
+}
+.navbar-brand {
+    font-size: 18px;
+    line-height: 25px;
+}
+/*.navbar-brand > img{
+    margin-top: -4px;
+    height: 30px;
+}*/
+.nav > li > a.logoutBtn{
+    padding-left: 0;
+}
+.userName a{
+    color:#fff;
+    font-weight: bold;
+}
+.userName a:hover{
+    text-decoration: underline;
+}
+/*tooltip*/
+.tooltip-inner{
+    background: #efefef;
+    color: #333;
+    padding: 5px 9px;
+    font-size: 12px;
+    font-family: \5FAE\8EDF\6B63\9ED1\9AD4, Microsoft, Arial, Helvetica, sans-serif;
+}
+.tooltip.bottom .tooltip-arrow{
+    border-bottom-color:#efefef;
+}
+/*form*/
+.label{
+    padding: 0px 5px 0px 5px;
+}
+.table input, .table select{
+    height: 28px;
+    padding: 3px 5px;
+}
+.table input[type=checkbox],
+.table input[type=radio]{
+    height: auto;
+}
+.form-group{
+    margin-bottom: 5px;
+}
+/*ckeditor*/
+.modal-body .cke_top {
+    padding: 4px 6px 0px;
+}
+a.cke_button_disabled:hover, a.cke_button_disabled:focus, a.cke_button_disabled:active{
+    padding: 2px;
+}
+/*checkbox style*/
+.form-horizontal .checkboxcolor.checkbox-inline .checker{
+    top: -1px;
+    margin-right: 3px;
+}
+.checkboxcolor_th {
+    top: -1px;
+}
+.checkboxcolor{
+    padding-left: 0;
+}
+.checkboxcolor .checker{
+    position: relative;
+}
+.checkboxcolor .checker span{
+    border: 1.5px solid #607D8B;
+}
+.checkboxcolor .checker, .checkboxcolor .checker span,
+.checkboxcolor .checker input{
+    width: 15px;
+    height: 15px;
+}
+.checkboxcolor .checker span::after{
+    font-size: 14px;
+}
+.checkboxcolor_th .checker span {
+    border: 1.5px solid #eaeaea;
+}
+.checkboxcolor_th .checker span::after{
+    color:  #eaeaea;
+}
+
+/*menu*/
+.navigation > li > ul li.active > a, .navigation > li > ul li.active > a:hover, .navigation > li > ul li.active > a:focus {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.navigation > li.active > a, .navigation > li.active > a:hover,
+.navigation > li.active > a:focus{
+    background: #fb9500;
+}
+/*header_form*/
+.header_form{
+    display: block;
+    vertical-align: top;
+    margin-bottom: 20px;
+}
+.header_form .fstMultipleMode .fstControls{
+    min-width:100px;
+    width: 200px;
+    padding: 0 3px;
+}
+.header_form select.form-control{
+    width: 115px;
+}
+.addBtnBox{
+    display: inline-block;
+    margin-bottom:0;
+}
+.header_msg{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.header_msg .badge{
+    padding: 0px 4px 0px 4px;
+    margin-left: 2px;
+}
+
+.header_msg span > a{
+    color:#efefef;
+}
+.header_msg i{
+    cursor: pointer;
+}
+.header_msg li:hover{
+    color:#d4d4d4;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/*bubble*/
+.modal-content{
+    border-radius: 6px;
+
+}
+.modal-header{
+    padding:15px 20px;
+    color: #fff;
+    min-height: 50px;
+}
+.modal-header h4{
+    font-size: 16px;
+}
+.modal-header .close{
+    top: 45%;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+}
+.modal-body{
+   /* padding-bottom: 0;*/
+}
+.modal-footer{
+    padding: 0 20px 20px 20px;
+}
+.modal-footer button{
+    width: 80px;
+}
+
+/*pagination*/
+.page_box{
+    margin-top: 20px;
+}
+tfoot .pagination-flat.pagination-sm > li > a, tfoot .pagination-flat.pagination-sm > li > span{
+    min-width: 25px;
+}
+tfoot .pagination > li > a, tfoot .pagination > li > span{
+    padding: 2px 0;
+}
+tfoot .pagination > .active > a,
+tfoot .pagination > .active > span,
+tfoot .pagination > .active > a:hover, .pagination > .active > span:hover,
+tfoot .pagination > .active > a:focus, .pagination > .active > span:focus, .sidebar-xs .sidebar-main .navigation > li > a > span{
+    background:#fb9500;
+    border: 1px solid #fb9500;
+}
+
+/*addBtn*/
+.addBtn i{
+    margin-left: 5px;
+    font-size: 13px;
+}
+
+/*table*/
+.table{
+    border: 1px solid #ddd;
+    /*margin-bottom: 10px;*/
+}
+.tableBox .table > thead > tr > th,
+.tableBox .table > tbody > tr > th,
+.tableBox .table > tbody > tr > td,
+.tableBox .table > tfoot > tr > th,
+.tableBox .table > tfoot > tr > td{
+    padding: 6px 7px;
+    line-height: 17px;
+    min-width: 90px;
+}
+.tableCenter .table  tr th{
+    text-align: center;
+}
+.tableBox .table > thead > tr > th.update,
+.tableBox .table > tbody > tr > th.update,
+.tableBox .table > tbody > tr > td.update,
+.tableBox .table > tfoot > tr > th.update,
+.tableBox .table > tfoot > tr > td{
+    min-width: 130px;
+    width: 150px;
+}
+/*.tableBox .table > tfoot > tr > th,
+.tableBox .table > tfoot > tr > td {
+    padding: 8px 7px;
+}*/
+.tableBox .table > thead > tr > th.numBox,
+.tableBox .table > tbody > tr > td.numBox{
+    min-width: 45px;
+    text-align: center;
+    width: 45px;
+}
+.tableBox .table > thead > tr > th.controlBox,
+.tableBox .table > tbody > tr > td.controlBox{
+    min-width: inherit;
+    text-align: center;
+    width: 104px;
+}
+.dropdown-menu{
+    min-width: 275px;
+}
+
+/*fixed table*/
+.fixedTitle{
+    width: 120px;
+    height: 29px;
+    position: absolute;
+    left: 0;
+    top: 1px;
+    padding: 5px;
+    text-align: center;
+}
+.fixedTable{
+    position: relative;
+}
+.fixedTable .table {
+  background-color: white;
+  width: auto;
+}
+.fixedTable .table tr td,
+.fixedTable .table tr th {
+  min-width: 120px;
+  width: 120px;
+  min-height: 20px;
+  height: 20px;
+  padding: 5px;
+  text-align: center;
+}
+.fixedTable-header {
+  width: auto;
+  height: 30px;
+  margin-left: 120px;
+  overflow: hidden;
+  border-bottom: 1px solid #CCC;
+}
+.fixedTable-sidebar {
+  width: 120px;
+  height: 550px;
+  float: left;
+  overflow: hidden;
+  border-right: 1px solid #CCC;
+}
+.fixedTable-sidebar .table tr td{
+    height: 50px;
+    text-align: left;
+}
+.fixedTable-sidebar .table tr td i{
+    margin-right: 3px;
+}
+.fixedTable-body {
+    overflow: auto;
+    width: calc(100% - 120px);
+    height: 550px;
+    float: left;
+}
+.fixedTable-body label{
+    width: 15px;
+    text-align: center;
+    margin-bottom: 0;
+}
+/*nav-tabs*/
+.langPanel{
+    border-color:transparent;
+    box-shadow:none;
+    margin-bottom: 0;
+}
+.langPanel .panel-body{
+    padding: 0;
+}
+.nav-tabs.nav-tabs-highlight > li.active > a, .nav-tabs.nav-tabs-highlight > li.active > a:hover, .nav-tabs.nav-tabs-highlight > li.active > a:focus{
+    border-top-color: #263238;
+}
+
+/*picker color*/
+.sp-container, .sp-replacer, .sp-preview, .sp-dragger, .sp-slider, .sp-alpha, .sp-clear, .sp-alpha-handle, .sp-container.sp-dragging .sp-input, .sp-container button{
+    z-index: 9999;
+}
+/*datapicker*/
+.daterangepicker.dropdown-menu{
+    z-index: 9999;
+}
+
+/*index*/
+.team_table .table > tbody > tr > td b{
+    margin-right: 3px;
+    color: #333
+}
+
+/*report/report*/
+.reportDate_box{
+    display: inline-block;
+}
+.reportDate_box > div{
+    display: inline-block;
+    vertical-align: middle;
+}
+.reportDate_box > div:nth-child(2){
+    margin: 0 5px;
+}
+.reportDate_box > div.report_date{
+    max-width: 250px;
+    margin-bottom: 5px;
+}
+.reportDate_box > div.report_date .input-group-addon{
+    display: inline-block;
+    width: 38px;
+    vertical-align: top;
+    height: 32px;
+    margin-left: -3px;
+}
+.reportDate_box > div.report_date input{
+    display: inline-block;
+    width: calc(100% - 40px);
+    float: inherit;
+    vertical-align: top;
+}
+.reportBox{
+    clear:both;
+    padding: 0 10px;
+}
+/*report/group_report*/
+.groupTable .table > thead > tr > th.controlBox,
+.groupTable .table > tbody > tr > th.controlBox,
+.groupTable .table > tbody > tr > td.controlBox,
+.groupTable .table > tfoot > tr > th.controlBox{
+    width: 130px;
+}
+.table > tbody > tr > td.hiddenRow > div .table.groupReportTable{
+    width: 100%;
+}
+/*game/outside-league-binding*/
+.radio-inline, .checkbox-inline,
+.radio-inline + .radio-inline,
+.checkbox-inline + .checkbox-inline{
+    margin-left: 0;
+    margin-right: 15px;
+}
+.outsideTable .radio-inline{
+    padding-left: 20px;
+    padding-right: 10px;
+}
+.form-horizontal .outsideTableBox .radio,
+.form-horizontal .outsideTableBox .radio-inline{
+    padding-top:0;
+    width: 110px;
+}
+
+/*game/defense*/
+.defense_link a{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 0 5px;
+}
+
+/*game/current*/
+.table.gameCurrentTable > thead > tr > th{
+    text-align: center;
+}
+.currTagBtn {
+    padding: 1px 8px;
+    font-size: 12px;
+}
+.currLinkBox{
+    position: relative;
+}
+.historyIcon{
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #333;
+    font-size: 13px;
+}
+
+/*game/current_setting*/
+.bhoGroup{
+    display: inline-block;
+    vertical-align: top;
+}
+.bhoGroup_left{
+    width: 24%;
+}
+.bhoGroup_right{
+    width: 75%;
+}
+
+/*game/current_history*/
+.currHistory_txt{
+    margin: 15px 0;
+}
+
+/*game/instant-order*/
+.order_box{
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+.order_title{
+    margin-bottom: 0;
+    font-size: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 100px;
+}
+.order_title i{
+    margin-right: 2px;
+}
+.order_list{
+    display: inline-block;
+    vertical-align: middle;
+    width: calc(100% - 115px);
+}
+.order_list a{
+    padding: 5px 11px;
+    border-radius: 5px;
+}
+/*game/instant-order-link*/
+.num_list{
+    margin: 0 5px;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top: -4px
+}
+.num_list li{
+    display: inline-block;
+    border-radius: 3px;
+    margin:0 3px 0 0;
+}
+.num_list li.active{
+    background-color: #eee;
+    padding: 0 8px;
+}
+.num_list li a{
+    color: #333;
+}
+.instant-orderBox select {
+    max-width: 150px;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 5px;
+    height: 25px;
+    line-height: 25px;
+    padding: 2px 5px;
+}
+.instant-orderBox button{
+    margin-bottom: 5px;
+    height: 25px;
+    padding: 2px 5px;
+}
+.instant-order-reset span{
+    margin-right: 2px;
+}
+.instant-order-table .table > thead > tr > th, .instant-order-table .table > tbody > tr > td{
+    padding: 5px 10px;
+}
+
+/*account/layer*/
+.viewModal .table, .levelModal .table{
+    width: auto;
+}
+.viewModal .table > thead > tr > th,
+.viewModal .table > tbody > tr > th,
+.viewModal .table > tbody > tr > td,
+.viewModal .table > tfoot > tr > th,
+.viewModal .table > tfoot > tr > td,
+.levelModal .table > thead > tr > th,
+.levelModal .table > tbody > tr > th,
+.levelModal .table > tbody > tr > td,
+.levelModal .table > tfoot > tr > th,
+.levelModal .table > tfoot > tr > td{
+    padding: 2px 5px;
+}
+.viewModal h6{
+    margin: 0;
+}
+/*.table > tbody > tr > td:last-child.hiddenRow{
+    padding: 0;
+    border:none;
+    text-align: left;
+}
+.table > tbody > tr > td.hiddenRow > div{
+    margin: 0 15px;
+}
+.table > tbody > tr > td.hiddenRow > div .table{
+    width: auto;
+}*/
+/*account/layer_add*/
+.layer_tabs{
+    margin-bottom: 15px;
+}
+.layer_tabs .panel-heading,
+.layer_tabs .panel-body{
+    padding: 0 0 15px;
+}
+.layer_tabs .layer_ballmTitle,
+.layer_tabs .layer_ballBet,
+.layer_ballBet label,
+.layer_ballBet> input{
+    display: inline-block;
+    vertical-align: middle;
+    margin:0 3px 0 0;
+}
+.layer_ballBet > input{
+    margin-left: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    width: 80px;
+    padding: 4px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.tableBox .layer_ballTable > thead > tr > th{
+    width: 150px;
+    min-width: 150px;
+}
+
+.tableBox .layer_ballTable > thead > tr > th:first-child{
+    min-width: 65px;
+    width: 65px;
+}
+.tableBox .layer_ballTable > thead > tr > th:last-child{
+    width: 270px;
+    min-width: 270px;
+}
+.tableBox .layer_ballTable td input,
+.tableBox .layer_ballTable td button{
+    width:60px;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 3px 5px;
+    height: 26px;
+}
+/*game/handicap-config*/
+.settingTable{
+    overflow-x: auto;
+    margin-left:110px;
+    margin-right:110px;
+    overflow-y: visible;
+    padding-bottom: 1px;
+    width: calc(100% - 220px);
+}
+.fixSide{
+    position: absolute;
+    min-width:116px;
+    width: 116px;
+    top: auto;
+    background: #fff;
+}
+.fixLeft {
+    left: 15px;
+}
+.fixRight {
+    right: 15px;
+}
+.settingTable .table > tbody > tr th.sideHeight{
+    height: 38px;
+    line-height: 28px;
+}
+.tableBox .layer_ballTable td button.sumbitBtn{
+    width: auto;
+    padding: 5px 10px;
+    height: auto;
+}
+.tableBox .layer_ballTable span{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.tableBox .layer_ballTable span label{
+    padding-top: 0;
+    min-height: inherit;
+}
+/*trade/deposit*/
+.depositBox .table > thead > tr > th:last-child,
+.depositBox .table > tbody > tr > td:last-child{
+    width: 140px;
+    min-width: 140px;
+}
+/*trade/withdraw*/
+.withdrawBox .table > thead > tr > th:last-child,
+.withdrawBox .table > tbody > tr > td:last-child{
+    width: 225px;
+    min-width: 225px;
+}
+
+/*account/layer_edit_cash,
+account/layer_edit_credit*/
+.account_bet{
+    margin-bottom: 25px;
+}
+.account_bet label{
+    display: inline-block;
+    margin-right: 10px;
+}
+.account_bet input{
+    margin-left: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    width: 80px;
+    padding: 4px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.account_bet button{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 3px 10px;
+}
+.layer_tabs{
+    margin-bottom: auto;
+}
+.layer_tabs.nav-tabs.nav-tabs-component.nav-tabs-solid > li > a::before,
+.layer_tabs.nav-tabs.nav-tabs-component > li > a::before{
+    content: "";
+    border: 2px solid #607D8B;
+    display: inline-block;
+    border-radius: 100%;
+    text-align: center;
+    position: relative;
+    width: 14px;
+    height: 14px;
+    top: 2px;
+    margin-right: 3px;
+}
+.layer_tabs.nav-tabs.nav-tabs-solid > .active > a,
+.layer_tabs.nav-tabs.nav-tabs-solid > .active > a:hover,
+.layer_tabs.nav-tabs.nav-tabs-solid > .active > a:focus{
+    background: transparent;
+    border:transparent;
+    color: #333333;
+    position: relative;
+}
+.layer_tabs.nav-tabs.nav-tabs-solid > .active > a::after{
+    content: "";
+    position: absolute;
+    top: 11.5px;
+    left: 4px;
+    border: 3px solid #607D8B !important;
+    border-color: inherit;
+    width: 0;
+    height: 0;
+    border-radius: 100%;
+    opacity: 1;
+    color: #607D8B;
+    z-index: 99;
+    display: inline-block;
+}
+.tableBox .table > thead > tr > th.accountWidth,
+.tableBox .table > tbody > tr > th.accountWidth,
+.tableBox .table > tbody > tr > td.accountWidth{
+    min-width:60px;
+    text-align: center;
+}
+.accountInfoBox{
+    clear: both;
+}
+.accountInfoUnit{
+    float: left;
+    width: calc(100% / 10);
+    border-right:1px solid #ddd;
+    border-bottom:1px solid #ddd;
+}
+.accountInfo_titleTop{
+    padding: 4px 7px;
+    height: 28px;
+    border-bottom: 1px solid #ddd;
+    line-height: 16px;
+    background: #455A64;
+    color:#fff;
+}
+.accountInfo_titleContent{
+    padding: 4px 5px;
+    height: 36px;
+    line-height: 28px;
+}
+.accountInfo_titleContent input{
+    width: 100%;
+    height: 26px;
+}
+.ballkind_setting .radio-inline{
+    padding-left: 20px;
+}
+.ballkind_setting .run {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    font-size: 13px;
+    padding: 0 20px 0 7px;
+    margin: -5px 0 0;
+    width: 120px;
+    box-sizing: border-box;
+}
+.ballkind_setting .run1{
+     background: url(../images/ballKindBg.png) no-repeat;
+}
+.ballkind_setting .run2{
+     background: url(../images/ballKindBg2.png) no-repeat;
+}
+.ballkind_setting .run3{
+     background: url(../images/ballKindBg3.png) no-repeat;
+}
+.ballkind_setting .run4{
+     background: url(../images/ballKindBg4.png) no-repeat;
+}
+/*account/check*/
+.check_table .table{
+    width: auto;
+}
+
+/*danger-level*/
+.danger_levelTableBox{
+    overflow-x:inherit;
+}
+.danger_levelTable1 > thead > tr > th:first-child,
+.danger_levelTable1 > tbody > tr > td:first-child{
+    color: #fff;
+}
+
+/*cash/pay_setting*/
+.pay_company legend{
+    font-size: 14px;
+    font-weight: bold;
+    color: #607D8B;
+}
+
+/*offer/offer_list_add*/
+.offer_select span{
+    display: inline-block;
+}
+.offer_select span select{
+    width: 120px;
+}
+.offerList_detail > div{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+    margin-bottom: 20px;
+}
+.offerList_detail > div > span{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.offerList_detail .input-group-addon.input-xs{
+    padding: 3px 10px;
+}
+.input-group-addon{
+    padding:8px 11px 5px;
+}
+.switchBox {
+    display: inline-block;
+    vertical-align: top;
+}
+.toggle.switchBtn {
+    border-radius: 3px;
+    }
+.toggle.switchBtn .toggle-handle {
+    border-radius: 0px;
+}
+.switchBtn, .switchBtn:focus, .switchBtn.focus, .switchBtn:hover{
+    border-color:#546e7a;
+}
+.switchBtn label.btn.btn-primary.btn-xs.toggle-on {
+    background: #546e7a;
+}
+/*offer/verify*/
+.viewPage{
+    margin-bottom: 10px;
+}
+.viewPage select{
+    width: 100px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.verifyBox .table > thead > tr > th:last-child,
+.verifyBox　.table > thead > tr > td:last-child{
+    width: 120px;
+    min-width: 120px;
+}
+.verifyForm .verify_title{
+    width: 75px;
+}
+.verifyForm .verify_info{
+    width: calc(100% - 75px);
+}
+.form-horizontal .form_half_group{
+    width: 50%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+}
+.form-horizontal .form_full_group{
+    margin-left: 0;
+    margin-right: 0;
+}
+.verifyBtnBox button{
+    width: 80px;
+    margin: 0 2px;
+}
+
+/*theme*/
+.dataTables_paginate .paginate_button{
+    padding: 2px;
+}
+.upload_img img{
+    max-width: 280px;
+    max-height: 280px;
+}
+.uploader{
+    width: 83.33333333%;
+}
+/*game/add*/
+.searchTeam{
+    padding-right:10px;
+    margin-bottom: 20px;
+    padding-left: 0;
+}
+.resultTeam{
+    padding-left:10px;
+    margin-bottom: 20px;
+    padding-right: 0;
+}
+.searchTeam th, .searchTeam td,
+.resultTeam th, .resultTeam td{
+    height: 29px;
+    line-height: 29px;
+}
+.searchTeam tfoot .row{
+    margin: 0;
+}
+.searchTeam tfoot .teamInfo{
+    text-align: left;
+}
+.searchTeam tfoot .teamInfo div{
+    margin-top: 3px;
+}
+.searchTeam tfoot .teamPage{
+    text-align: right;
+}
+/*.searchTeam input[type="checkbox"]{
+    margin-top: 0;
+    position: relative;
+    top:2px;
+}
+.resultTeam .dataTables_filter{
+    display: none;
+}
+.game_addSendBtn{
+    margin-top: 30px;
+}*/
+
+
+/*multiple select*/
+.fstElement{
+    display: block;
+    border-radius: 3px;
+    font-size: 13px;
+}
+.fstMultipleMode .fstControls{
+    width:100%;
+    padding: 0 3px;
+}
+.fstChoiceItem {
+    font-size: 13px;
+    margin: 3px 2px;
+}
+.fstMultipleMode .fstQueryInput{
+    margin: 0;
+    padding:6px 10px;
+    font-size: 12px;
+}
+.fstChoiceItem{
+    border: 1px solid #455a64;
+    background-color: #455a64;
+}
+.fstResultItem {
+    font-size: 12px;
+    /*display: inline-block;*/
+    margin:0;
+    padding: 7px 0;
+    float: left;
+    position: relative;
+}
+.fstResultItem.fstSelected{
+    background-color: transparent;
+    border-color: transparent;
+    color: #333;
+    margin: 0 3px;
+}
+.fstResultItem::before{
+    content: "\e600";
+    font-family: 'icomoon';
+    font-size: 16px;
+    margin-right: 5px;
+    color: #fff;
+}
+.fstResultItem.fstSelected::before{
+    content: "\e600";
+    font-family: 'icomoon';
+    font-size: 16px;
+    position: relative;
+    top: 2px;
+    margin-right: 5px;
+    color: #379956;
+}
+.fstResultItem.fstFocused {
+    color: #666;
+    background-color: transparent;
+    border-color: transparent;
+}
+/*announce/content*/
+.bubble_title::before{
+    content: "";
+    display: inline-block;
+    width: 4px;
+    height: 100%;
+    background: #37474F;
+    position: absolute;
+    top: 2px;
+    left: 0;
+}
+.bubble_title{
+    font-weight: bold;
+    font-size: 18px;
+    color: #37474F;
+    margin-bottom: 15px;
+    border-bottom: 1px dotted #ccc;
+    position: relative;
+    padding-left: 10px;
+}
+.short{
+  width: 120px
+}
+.panel-body + .panel-body{
+  border-top: initial ;
+  padding: 0px 20px 20px 20px;
+}
+.center{
+  text-align: center
+}
