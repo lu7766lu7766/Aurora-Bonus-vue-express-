@@ -16,6 +16,7 @@ export default {
   },
   actions: {
     getUsers: async (store) => await apiInit(store, 'get', 'api/users'),
+    getUser: async (store, data) => await apiInit(store, 'get', `api/users/${data.id}`),
   }
 }
 

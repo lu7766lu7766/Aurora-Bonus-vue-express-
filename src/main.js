@@ -11,8 +11,6 @@ import 'muse-ui/dist/muse-ui.css'
 import './assets/icon.css'
 import 'vodal/fade.css'
 
-require('assets/lib')
-
 Vue.use(MuseUI)
 Vue.prototype.$http = axios
 Vue.prototype.toastr = toastr

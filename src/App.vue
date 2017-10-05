@@ -14,12 +14,14 @@ export default {
   },
   methods: {
     ...mapActions([
+      'getUser',
       'getUsers'
     ])
   },
   async mounted () {
     // var res = await axios.get('/api/users')
-    var res = await this.getUsers()
+    // var res = await this.getUser({ id: 1 })
+    var res = await this.getUsers({ id: 1 })
     console.log(res)
   }
 }
