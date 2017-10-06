@@ -7,7 +7,10 @@
   "scripts": {
     "dev": "node build/dev-server.js",
     "build": "node build/build.js && backpack build && node build/finish_build.js",
-    "server": "backpack dev"
+    "server": "backpack dev",
+    "migrate": "knex migrate:rollback && knex migrate:latest",
+    "migrate-seed": "knex migrate:rollback && knex migrate:latest && knex seed:run",
+    "seed": "seed:run"
   },
   "dependencies": {
     "axios": "^0.16.2",
