@@ -31,7 +31,7 @@ export default (app) => {
   app.use((req, res, next) => {
     if (res.body !== undefined) {
       res.body = {
-        code: 0,
+        code: res.code || 0,
         data: res.body
       }
       // console.log(req.connection.remoteAddress)

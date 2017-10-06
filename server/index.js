@@ -1,9 +1,9 @@
 'use strict'
 
 import express from 'express'
-import config from './config'
 import middlewares from './middlewares'
 import cors from 'cors'
+import session from 'express-session'
 
 var corsOptions = {
   origin: 'http://localhost:8080', // not 127.0.0.1
@@ -14,6 +14,11 @@ var corsOptions = {
 const app = express()
 const host = process.env.HOST || '127.0.0.1'
 const port = process.env.PORT || 8099
+
+app.use(session({
+  secret: 'aurora bonus',
+  cookie: {maxAge: 60* 60 * 1000}
+}));
 
 app.set('port', port)
 app.use(cors(corsOptions))

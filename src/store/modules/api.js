@@ -19,6 +19,8 @@ export default {
     addUser: async (store, data) => await apiInit(store, 'post', `api/users/add`, data),
     getBonus: async (store, data) => await apiInit(store, 'post', `api/users/bonus`, data),
     setScore: async (store, data) => await apiInit(store, 'post', `api/score/update`, data),
+    doLogin: async (store, data) => await apiInit(store, 'post', `api/users/login`, data),
+    getSession: async (store, data) => await apiInit(store, 'get', `api/users/session`, data),
   }
 }
 

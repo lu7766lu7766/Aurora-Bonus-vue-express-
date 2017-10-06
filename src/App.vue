@@ -17,20 +17,16 @@ export default {
   },
   methods: {
     ...mapActions([
-      'addUser',
-      'getUsers',
-      'setScore'
+      'doLogin',
+      'getSession',
     ])
   },
   async mounted () {
     // var res = await axios.get('/api/users')
     // var res = await this.getUser({ id: 1 })
     // var res = await this.getUsers({ id: 1 })
-    this.addUser({
-      user: {
-        id:2, name:'haha', password: 'gg'
-      }
-    })
+    await this.doLogin()
+    console.log(await this.getSession())
     // console.log(res)
   }
 }

@@ -7,17 +7,23 @@ import score from './controller/score'
 const router = Router()
 
 export default () => {
-
-  // Get all users.
-  router.get('/users', users.getUsers)
+  /**
+   * 登入，取得下線
+   */
+  router.post('/users/login', users.doLogin)
+  router.get('/users/session', users.getSession)
+  /**
+   * 紅利結算
+   */
   router.get('/users/bonus', users.getBonus)
-  // Get the user by id.
+  /**
+   * 新增使用者，
+   */
   router.post('/users/add', users.addUser)
-
-  // Set score
+  /**
+   * 輸入登入時數
+   */
   router.post('/score/update', score.update)
-
-
 
   // Handle routes not found.
   router.use(function(req, res, next) {
