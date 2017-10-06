@@ -11,7 +11,7 @@ export default () => {
    * 登入，取得下線
    */
   router.post('/users/login', users.doLogin)
-  router.get('/users/session', users.getSession)
+  router.get('/users/detail', users.isLogin, users.getUserDetail)
   /**
    * 紅利結算
    */

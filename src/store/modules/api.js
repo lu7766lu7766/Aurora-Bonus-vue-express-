@@ -15,12 +15,11 @@ export default {
     }
   },
   actions: {
-    getUsers: async (store) => await apiInit(store, 'get', 'api/users'),
     addUser: async (store, data) => await apiInit(store, 'post', `api/users/add`, data),
     getBonus: async (store, data) => await apiInit(store, 'post', `api/users/bonus`, data),
     setScore: async (store, data) => await apiInit(store, 'post', `api/score/update`, data),
     doLogin: async (store, data) => await apiInit(store, 'post', `api/users/login`, data),
-    getSession: async (store, data) => await apiInit(store, 'get', `api/users/session`, data),
+    getUserDetail: async (store, data) => await apiInit(store, 'get', `api/users/detail`, data),
   }
 }
 
@@ -64,7 +63,7 @@ function handleError (res, showErrMsg) {
 }
 
 function createApiBody (method = "get", url = "", data = {}) {
-  console.log('url', 'http://127.0.0.1:8099/' + url)
+  // console.log('url', 'http://127.0.0.1:8099/' + url)
   let res = _.merge({}, {
     url: 'http://127.0.0.1:8099/' + url,
     method,

@@ -21,21 +21,21 @@
                   </div>
 
                   <div class="form-group has-feedback has-feedback-left">
-                    <input type="text" class="form-control" placeholder="Username" v-model="account">
+                    <input type="text" class="form-control" placeholder="Username" v-model="account" @keyup.13="onLogin">
                     <div class="form-control-feedback">
                       <i class="icon-user text-muted"></i>
                     </div>
                   </div>
 
                   <div class="form-group has-feedback has-feedback-left">
-                    <input type="password" class="form-control" placeholder="Password" v-model="pw">
+                    <input type="password" class="form-control" placeholder="Password" v-model="password" @keyup.13="onLogin">
                     <div class="form-control-feedback">
                       <i class="icon-lock2 text-muted"></i>
                     </div>
                   </div>
 
                   <div class="form-group">
-                    <button type="submit" class="btn btn-primary btn-block" @click.prevent="handleLogin">登入 <i class="icon-circle-right2 position-right"></i></button>
+                    <button type="button" class="btn btn-primary btn-block" @click="onLogin">登入 <i class="icon-circle-right2 position-right"></i></button>
                   </div>
 
                 </div>
@@ -57,16 +57,36 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex'
+
 export default {
   name: 'login',
   data() {
     return {
-      account: "",
-      pw: ""
+      account: 'admin',
+      password: 'Ab12345'
     }
   },
   methods: {
-
+    ...mapActions([
+      'doLogin',
+      'getUserDetail',
+    ]),
+    async onLogin () {
+      const { account, password } = this
+      var res = await this.doLogin({
+        account, password
+      })
+      if (res.code === 0) {
+        var user = await this.getUserDetail()
+        if (user.code === 0) {
+          this.$store.commit('setUser', user.data)
+          alert('login success')
+        }
+      } else {
+        alert('login error')
+      }
+    }
   },
   computed: {
 

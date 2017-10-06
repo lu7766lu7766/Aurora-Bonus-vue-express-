@@ -7,7 +7,6 @@
 <script>
 require('bootstrap')
 require('bootstrap/dist/css/bootstrap.min.css')
-import { mapActions } from 'vuex'
 
 export default {
   name: 'app',
@@ -16,17 +15,17 @@ export default {
     }
   },
   methods: {
-    ...mapActions([
-      'doLogin',
-      'getSession',
-    ])
+
   },
   async mounted () {
     // var res = await axios.get('/api/users')
     // var res = await this.getUser({ id: 1 })
     // var res = await this.getUsers({ id: 1 })
-    await this.doLogin()
-    console.log(await this.getSession())
+    // await this.doLogin({
+    //   account: 'admin',
+    //   password: 'Ab12345'
+    // })
+    // console.log(await this.getUserDetail())
     // console.log(res)
   }
 }

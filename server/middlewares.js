@@ -35,8 +35,8 @@ export default (app) => {
         data: res.body
       }
       // console.log(req.connection.remoteAddress)
-      // res.json(res.body)
-      res.send(JSON.stringify(res.body))
+      res.json(res.body)
+      // res.send(res.body)
     } else {
       next()
     }
