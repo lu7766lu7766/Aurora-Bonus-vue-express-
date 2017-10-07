@@ -16,5 +16,12 @@ npm run server
 # webpack打包至'dist'目錄，含node server會包成index.js
 npm run build
 
+# mrgrate seed
+npm install knex -g
+knex migrate:make xxx
+knex migrate:latest
+knex migrate:rollback
+knex seed:run
+...
 ```
 
