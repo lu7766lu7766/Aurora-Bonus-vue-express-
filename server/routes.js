@@ -10,8 +10,11 @@ export default () => {
   /**
    * 登入，取得下線
    */
+  router.post('/users/logout', users.doLogout)
   router.post('/users/login', users.doLogin)
   router.get('/users/detail', users.isLogin, users.getUserDetail)
+  router.get('/users/select', users.isLogin, users.getUsersSelector)
+  router.get('/users', users.isLogin, users.getUsers)
   /**
    * 紅利結算
    */

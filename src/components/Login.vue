@@ -81,15 +81,13 @@ export default {
         var user = await this.getUserDetail()
         if (user.code === 0) {
           this.$store.commit('setUser', user.data)
-          alert('login success')
+          // alert('login success')
+          this.$router.push({ name: 'index' })
         }
       } else {
         alert('login error')
       }
     }
-  },
-  computed: {
-
   }
 }
 </script>

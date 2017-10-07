@@ -4,7 +4,6 @@
 import express from 'express'
 import favicon from 'serve-favicon'
 import bodyParser from 'body-parser'
-import config from './config'
 import routes from './routes'
 // import path from 'path'
 

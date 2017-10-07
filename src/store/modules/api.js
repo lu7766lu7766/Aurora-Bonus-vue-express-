@@ -15,11 +15,17 @@ export default {
     }
   },
   actions: {
-    addUser: async (store, data) => await apiInit(store, 'post', `api/users/add`, data),
-    getBonus: async (store, data) => await apiInit(store, 'post', `api/users/bonus`, data),
-    setScore: async (store, data) => await apiInit(store, 'post', `api/score/update`, data),
+    doLogout: async (store) => await apiInit(store, 'post', `api/users/logout`),
     doLogin: async (store, data) => await apiInit(store, 'post', `api/users/login`, data),
     getUserDetail: async (store, data) => await apiInit(store, 'get', `api/users/detail`, data),
+
+    getUsersSelector: async (store) => await apiInit(store, 'get', `api/users/select`),
+    addUser: async (store, data) => await apiInit(store, 'post', `api/users/add`, data),
+
+    getUsers: async (store, data) => await apiInit(store, 'get', `api/users`, data),
+
+    getBonus: async (store, data) => await apiInit(store, 'post', `api/users/bonus`, data),
+    setScore: async (store, data) => await apiInit(store, 'post', `api/score/update`, data),
   }
 }
 

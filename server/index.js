@@ -5,8 +5,15 @@ import middlewares from './middlewares'
 import cors from 'cors'
 import session from 'express-session'
 
+var whitelist = ['http://127.0.0.1:8080', 'http://localhost:8080']
 var corsOptions = {
-  origin: 'http://localhost:8080', // not 127.0.0.1
+  origin: function (origin, callback) {
+    if (whitelist.indexOf(origin) !== -1) {
+      callback(null, true)
+    } else {
+      callback(new Error('Not allowed by CORS'))
+    }
+  }, // not 127.0.0.1
   methods:['GET', 'POST'],
   credentials: true
 };
