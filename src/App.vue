@@ -8,6 +8,9 @@
 require('assets/lib')
 require('bootstrap')
 require('bootstrap/dist/css/bootstrap.min.css')
+require('orgchart/dist/js/jquery.orgchart.min.js')
+require('orgchart/dist/css/jquery.orgchart.min.css')
+
 
 export default {
   name: 'app',

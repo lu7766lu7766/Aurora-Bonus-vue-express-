@@ -22,6 +22,7 @@
     "keycode": "^2.1.8",
     "knex": "^0.13.0",
     "muse-ui": "^2.0.0-rc.5",
+    "orgchart": "^2.0.4",
     "serve-favicon": "^2.3.2",
     "toastr": "^2.1.2",
     "vodal": "^1.0.3",

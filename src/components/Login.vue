@@ -16,8 +16,12 @@
               <form>
                 <div class="panel panel-body login-form">
                   <div class="text-center">
-                    <div class="icon-object border-slate-300 text-slate-300"><i class="glyphicon glyphicon-user"></i></div>
-                    <h5 class="content-group">管理後台 <small class="display-block">請輸入帳號跟密碼</small></h5>
+                    <div class="icon-object border-slate-300 text-slate-300">
+                      <i class="glyphicon glyphicon-user"></i>
+                    </div>
+                    <h5 class="content-group">管理後台
+                      <small class="display-block">請輸入帳號跟密碼</small>
+                    </h5>
                   </div>
 
                   <div class="form-group has-feedback has-feedback-left">
@@ -35,7 +39,9 @@
                   </div>
 
                   <div class="form-group">
-                    <button type="button" class="btn btn-primary btn-block" @click="onLogin">登入 <i class="icon-circle-right2 position-right"></i></button>
+                    <button type="button" class="btn btn-primary btn-block" @click="onLogin">登入
+                      <i class="icon-circle-right2 position-right"></i>
+                    </button>
                   </div>
 
                 </div>
@@ -52,7 +58,7 @@
 
     </div>
     <!-- /page content -->
-
+    <div id="chart-container"></div>
   </div>
 </template>
 
@@ -72,7 +78,7 @@ export default {
       'doLogin',
       'getUserDetail',
     ]),
-    async onLogin () {
+    async onLogin() {
       const { account, password } = this
       var res = await this.doLogin({
         account, password
@@ -88,6 +94,36 @@ export default {
         alert('login error')
       }
     }
+  },
+  mounted() {
+    var datascource = {
+      'id': 0,
+      'name': 'Lao Lao',
+      'title': 'general manager',
+      'children': [
+        { 'id': 1, 'name': 'Bo Miao', 'title': 'department manager' },
+        {
+          'id': 2, 'name': 'Su Miao', 'title': 'department manager',
+          'children': [
+            { 'id': 3, 'name': 'Tie Hua', 'title': 'senior engineer' },
+            { 'id': 4, 'name': 'Hei Hei', 'title': 'senior engineer' }
+          ]
+        },
+        { 'id': 9, 'name': 'Bo Miao', 'title': 'department manager' }
+      ]
+    };
+    $('#chart-container').orgchart({
+      'data': datascource,
+      // 'nodeContent': 'title',
+      // 'verticalDepth': 3,
+      // 'depth': 4,
+      'createNode': function($node, data) {
+        // console.log($node)
+        $node.on('click', function() {
+          // console.log(data)
+        });
+      }
+    });
   }
 }
 </script>
@@ -96,6 +132,5 @@ export default {
 .row {
   justify-content: inherit;
 }
-
 </style>
 

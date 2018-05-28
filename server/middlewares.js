@@ -2,7 +2,7 @@
 
 // All middlewares are used here.
 import express from 'express'
-import favicon from 'serve-favicon'
+// import favicon from 'serve-favicon'
 import bodyParser from 'body-parser'
 import routes from './routes'
 // import path from 'path'
